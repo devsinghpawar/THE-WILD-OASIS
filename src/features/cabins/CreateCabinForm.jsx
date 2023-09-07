@@ -28,7 +28,7 @@ function CreateCabinForm() {
   });
 
   function onSubmit(data) {
-    mutate(data);
+    mutate({ ...data, image: data.image[0] });
   }
 
   function onError(errors) {
@@ -37,7 +37,7 @@ function CreateCabinForm() {
 
   return (
     <Form onSubmit={handleSubmit(onSubmit, onError)}>
-      <FormRow lable="Cabin name" error={errors?.name?.message}>
+      <FormRow label="Cabin name" error={errors?.name?.message}>
         <Input
           type="text"
           id="name"
@@ -48,7 +48,7 @@ function CreateCabinForm() {
         />
       </FormRow>
 
-      <FormRow lable="Maximum capacity" error={errors?.maxCapacity?.message}>
+      <FormRow label="Maximum capacity" error={errors?.maxCapacity?.message}>
         <Input
           type="number"
           id="maxCapacity"
@@ -63,7 +63,7 @@ function CreateCabinForm() {
         />
       </FormRow>
 
-      <FormRow lable="Regular price" error={errors?.regularPrice?.message}>
+      <FormRow label="Regular price" error={errors?.regularPrice?.message}>
         <Input
           type="number"
           id="regularPrice"
@@ -78,7 +78,7 @@ function CreateCabinForm() {
         />
       </FormRow>
 
-      <FormRow lable="Discount" error={errors?.discount?.message}>
+      <FormRow label="Discount" error={errors?.discount?.message}>
         <Input
           type="number"
           id="discount"
@@ -94,7 +94,7 @@ function CreateCabinForm() {
       </FormRow>
 
       <FormRow
-        lable="Description for website"
+        label="Description for website"
         disabled={isCreating}
         error={errors?.description?.message}
       >
@@ -109,8 +109,14 @@ function CreateCabinForm() {
         />
       </FormRow>
 
-      <FormRow lable="Cabin photo">
-        <FileInput id="image" accept="image/*" />
+      <FormRow label="Cabin photo">
+        <FileInput
+          id="image"
+          accept="image/*"
+          {...register("image", {
+            required: "This field is required",
+          })}
+        />
       </FormRow>
 
       <FormRow>
