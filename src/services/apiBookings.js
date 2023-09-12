@@ -1,4 +1,4 @@
-import { PAGE_SIZE } from "../utils/constants,js";
+import { PAGE_SIZE } from "../utils/constants.js";
 import { getToday } from "../utils/helpers";
 import supabase from "./supabase";
 
