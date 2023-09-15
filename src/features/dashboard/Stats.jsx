@@ -15,12 +15,12 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
   const sales = bookings.reduce((acc, cur) => acc + cur.totalPrice, 0);
 
   // 3.
-  const checkins = confirmedStays.length;
+  const checkins = confirmedStays?.length;
 
   // 4.
   // num checked in night / all available nights (num days * num cabins)
   const occupation =
-    confirmedStays.reduce((acc, cur) => acc + cur.numNights, 0) /
+    confirmedStays?.reduce((acc, cur) => acc + cur.numNights, 0) /
     (numDays * cabinCount);
 
   return (
