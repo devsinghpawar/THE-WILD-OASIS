@@ -100,7 +100,7 @@ function Pagination({ count }) {
 
         <PaginationButton
           onClick={nextPage}
-          display={currentPage === pageCount}
+          display={currentPage === pageCount ? "true" : "false"}
         >
           <HiChevronRight />
           <span>Next</span>
