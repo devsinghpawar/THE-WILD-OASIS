@@ -26,6 +26,10 @@ const ChartBox = styled.div`
   & .recharts-pie-label-text {
     font-weight: 600;
   }
+
+  @media screen and (max-width: 821px) {
+    padding: 1rem;
+  }
 `;
 
 const startDataLight = [
@@ -157,7 +161,7 @@ function DurationChart({ confirmedStays }) {
             dataKey="value"
             innerRadius={85}
             outerRadius={120}
-            cx="40%"
+            cx="50%"
             cy="50%"
             paddingAngle={3}
           >
@@ -174,6 +178,7 @@ function DurationChart({ confirmedStays }) {
             verticalAlign="middle"
             align="right"
             width="30%"
+            height="50%"
             layout="vertical"
             iconSize={15}
             iconType="circle"

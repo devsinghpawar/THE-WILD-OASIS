@@ -12,6 +12,11 @@ const StyledStat = styled.div`
   grid-template-rows: auto auto;
   column-gap: 1.6rem;
   row-gap: 0.4rem;
+
+  @media screen and (max-width: 821px) {
+    padding: 0.1rem;
+    width: "100%";
+  }
 `;
 
 const Icon = styled.div`
@@ -30,6 +35,13 @@ const Icon = styled.div`
     height: 3.2rem;
     color: var(--color-${(props) => props.color}-700);
   }
+
+  @media screen and (max-width: 821px) {
+    & svg {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
 `;
 
 const Title = styled.h5`
@@ -39,12 +51,26 @@ const Title = styled.h5`
   letter-spacing: 0.4px;
   font-weight: 600;
   color: var(--color-grey-500);
+
+  @media screen and (max-width: 821px) {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 1rem;
+  }
 `;
 
 const Value = styled.p`
   font-size: 2.4rem;
   line-height: 1;
   font-weight: 500;
+
+  @media screen and (max-width: 821px) {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 1rem;
+  }
 `;
 
 function Stat({ icon, title, value, color }) {

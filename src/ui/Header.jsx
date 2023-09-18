@@ -19,6 +19,7 @@ const StyledHeader = styled.header`
     width: 100%;
     height: 10%;
     z-index: 1;
+    gap: 1rem;
     transition: left 0.3s ease-in-out;
   }
 `;

@@ -36,7 +36,7 @@ const HamburgerIcon = styled.div`
     z-index: 2;
 
     & svg {
-      margin-top: 0.1rem;
+      margin-top: 1.5rem;
       width: 4rem;
       height: 3.5rem;
       color: var(--color-grey-400);
