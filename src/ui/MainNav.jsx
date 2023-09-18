@@ -53,10 +53,10 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-function MainNav() {
+function MainNav({ toggleMenu }) {
   return (
     <nav>
-      <NavList>
+      <NavList onClick={toggleMenu}>
         <li>
           <StyledNavLink to="/dashboard">
             <HiOutlineHome />
