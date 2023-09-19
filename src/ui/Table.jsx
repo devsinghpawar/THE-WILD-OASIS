@@ -36,7 +36,7 @@ const StyledRow = styled(CommonRow)`
     border-bottom: 1px solid var(--color-grey-100);
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     overflow: scroll;
   }
 `;

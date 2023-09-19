@@ -12,10 +12,10 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: flex-end;
 
-  @media screen and (max-width: 821px) {
+  @media (max-width: 821px) {
     position: fixed;
     top: 0;
-    width: 110%;
+    width: 105%;
     height: 10%;
     z-index: 1;
     gap: 1rem;
