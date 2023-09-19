@@ -22,6 +22,7 @@ const Main = styled.main`
   @media screen and (max-width: 821px) {
     margin-top: 4rem;
     padding: 4rem 1rem;
+    width: 100%;
   }
 `;
 
@@ -31,10 +32,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-
-  @media screen and (max-width: 821px) {
-    max-width: "100%";
-  }
 `;
 
 function AppLayout() {

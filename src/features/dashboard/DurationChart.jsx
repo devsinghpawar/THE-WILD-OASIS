@@ -178,7 +178,7 @@ function DurationChart({ confirmedStays }) {
             verticalAlign="middle"
             align="right"
             width="30%"
-            height="50%"
+            height="100%"
             layout="vertical"
             iconSize={15}
             iconType="circle"
