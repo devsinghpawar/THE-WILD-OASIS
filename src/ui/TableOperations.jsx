@@ -5,7 +5,7 @@ const TableOperations = styled.div`
   align-items: center;
   gap: 1.6rem;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
   }
 `;
