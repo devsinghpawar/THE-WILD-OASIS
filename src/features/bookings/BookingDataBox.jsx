@@ -53,6 +53,10 @@ const Header = styled.header`
 
 const Section = styled.section`
   padding: 3.2rem 4rem 1.2rem;
+
+  @media screen and (max-width: 500px) {
+    padding: 2rem 2rem 2rem;
+  }
 `;
 
 const Guest = styled.div`
@@ -65,6 +69,12 @@ const Guest = styled.div`
   & p:first-of-type {
     font-weight: 500;
     color: var(--color-grey-700);
+  }
+
+  @media screen and (max-width: 500px) {
+    & p:last-of-type {
+      display: none;
+    }
   }
 `;
 
