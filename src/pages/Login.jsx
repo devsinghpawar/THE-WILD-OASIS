@@ -11,6 +11,10 @@ const LoginLayout = styled.main`
   justify-content: center;
   gap: 3.2rem;
   background-color: var(--color-grey-50);
+
+  @media screen and (min-width: 481px) {
+    grid-template-columns: 48rem;
+  }
 `;
 
 function Login() {
