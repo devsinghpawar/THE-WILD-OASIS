@@ -10,10 +10,13 @@ const Row = styled.div`
       align-items: center;
       gap: 0.5rem;
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
+      }
+      @media (min-width: 481px) and (max-width: 821px) {
+        margin-top: 4rem;
       }
     `}
   ${(props) =>

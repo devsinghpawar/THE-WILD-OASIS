@@ -40,7 +40,7 @@ const Error = styled.span`
   font-size: 1.4rem;
   color: var(--color-red-700);
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 480px) {
     display: grid;
     grid-template-columns: 33fr;
   }

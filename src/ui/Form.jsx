@@ -11,7 +11,7 @@ const Form = styled.form`
       border: 1px solid var(--color-grey-100);
       border-radius: var(--border-radius-md);
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 480px) {
         width: 100%;
         justify-content: center;
         align-items: center;
