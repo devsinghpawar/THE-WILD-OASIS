@@ -27,9 +27,8 @@ const StyledFormRow = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    grid-template-columns: 5rem 2fr 2fr;
-
-    gap: 3.4rem;
+    grid-template-columns: 30rem;
+    gap: 1rem;
   }
 `;
 
@@ -40,6 +39,11 @@ const Label = styled.label`
 const Error = styled.span`
   font-size: 1.4rem;
   color: var(--color-red-700);
+
+  @media screen and (max-width: 500px) {
+    display: grid;
+    grid-template-columns: 33fr;
+  }
 `;
 
 function FormRow({ label, error, children }) {

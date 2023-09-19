@@ -12,7 +12,7 @@ const Form = styled.form`
       border-radius: var(--border-radius-md);
 
       @media screen and (max-width: 500px) {
-        padding-left: 0.5rem;
+        padding: 2.4rem 5rem;
       }
     `}
 
