@@ -14,7 +14,7 @@ const Form = styled.form`
       @media screen and (max-width: 500px) {
         padding: 2.4rem 4rem;
         margin: 1rem 1rem;
-        width: 38rem;
+        width: "100%";
         justify-content: center;
         align-items: center;
       }
