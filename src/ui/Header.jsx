@@ -15,8 +15,7 @@ const StyledHeader = styled.header`
   @media screen and (max-width: 821px) {
     position: fixed;
     top: 0;
-    right: "1%";
-    width: 100%;
+    width: 110%;
     height: 10%;
     z-index: 1;
     gap: 1rem;

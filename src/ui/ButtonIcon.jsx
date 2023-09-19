@@ -16,6 +16,10 @@ const ButtonIcon = styled.button`
     height: 2.2rem;
     color: var(--color-brand-600);
   }
+
+  @media screen and (max-width: 480px) {
+    padding-right: 0.4rem;
+  }
 `;
 
 export default ButtonIcon;
