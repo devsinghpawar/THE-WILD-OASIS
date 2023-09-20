@@ -16,7 +16,11 @@ const Row = styled.div`
         margin-top: 1rem;
       }
       @media (min-width: 481px) and (max-width: 821px) {
+<<<<<<< HEAD
         margin-top: 3rem;
+=======
+        margin-top: 4rem;
+>>>>>>> 6a55830a26ba91a20d275eb87b8e1ffa4a62a279
       }
     `}
   ${(props) =>
