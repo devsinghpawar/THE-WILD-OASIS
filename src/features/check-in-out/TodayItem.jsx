@@ -7,7 +7,7 @@ import CheckoutButton from "./CheckoutButton";
 
 const StyledTodayItem = styled.li`
   display: grid;
-  grid-template-columns: 9rem 2rem 1fr 7rem 9rem;
+  grid-template-columns: 9rem 5rem 1fr 7rem 2rem;
   gap: 1.2rem;
   align-items: center;
 
@@ -17,6 +17,17 @@ const StyledTodayItem = styled.li`
 
   &:first-child {
     border-top: 1px solid var(--color-grey-100);
+  }
+
+  @media screen and (max-width: 821px) {
+    grid-template-columns: 9rem 7rem 1fr;
+  }
+`;
+
+const Stay = styled.div`
+  @media screen and (max-width: 480px) {
+    display: grid;
+    padding-left: 1rem;
   }
 `;
 
@@ -33,7 +44,8 @@ function TodayItem({ activity }) {
 
       <Flag src={guests.countryFlag} alt={`Flag of ${guests.country}`} />
       <Guest>{guests.fullName}</Guest>
-      <div>{numNights} nights</div>
+      <Stay>{numNights} nights</Stay>
+      <div></div>
 
       {status === "unconfirmed" && (
         <Button

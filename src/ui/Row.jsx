@@ -16,7 +16,7 @@ const Row = styled.div`
         margin-top: 1rem;
       }
       @media (min-width: 481px) and (max-width: 821px) {
-        margin-top: 4rem;
+        margin-top: 3rem;
       }
     `}
   ${(props) =>
