@@ -21,11 +21,18 @@ const Form = styled.form`
   ${(props) =>
     props.type === "modal" &&
     css`
-      width: 80rem;
+      width: 100%;
     `}
-    
+   
   overflow: hidden;
   font-size: 1.4rem;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
 `;
 
 Form.defaultProps = {
