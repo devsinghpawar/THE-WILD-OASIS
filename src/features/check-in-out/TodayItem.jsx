@@ -20,7 +20,7 @@ const StyledTodayItem = styled.li`
   }
 
   @media screen and (max-width: 821px) {
-    grid-template-columns: 9rem 7rem 1fr;
+    grid-template-columns: 9rem 4rem 1fr;
   }
 `;
 
