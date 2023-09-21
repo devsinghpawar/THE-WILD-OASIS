@@ -26,7 +26,7 @@ const StyledFormRow = styled.div`
     gap: 1.2rem;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1240px) {
     grid-template-columns: 100%;
     gap: 1rem;
   }
