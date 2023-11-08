@@ -123,6 +123,7 @@ function Uploader() {
     await deleteBookings();
     await createBookings();
     setIsLoading(false);
+    // IMPO
   }
 
   return (
